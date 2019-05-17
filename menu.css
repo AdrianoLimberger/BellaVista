@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.header-menu {
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    background-color: #7ed56f;
+    text-align: center;
+    z-index: 10;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    line-height: 5rem;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 4rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-menu ul li a:hover {
+    background-color: #fff;
+    color: #7ed56f;
+}
+
+.header-menu ul .li-sair {
+    float: right;
+}
