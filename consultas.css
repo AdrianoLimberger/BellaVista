@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.btn-agendar:link, .btn-agendar:visited {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 10rem);
+    padding: 1.5rem 2rem;
+    width: 20rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 100px;
+    background-color: #7ed56f;
+    color: #fff;
+}
+
+.btn-agendar:hover {
+    background-color: #55c57a;
+}
+
+.btn-agendar:active, .btn-agendar:focus {
+    background-color: #55c57a;
+    outline: none;
+}
+
+.btn-agendar:active {
+    transform: translateY(-2px);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .3);
+}
+
+#div-container {
+    position: relative;
+    top: 30rem;
+    left: 2.5vw;
+    width: 95vw;
+    background-color: #7ed56f;
+}
+
+#div-container .div-consulta {
+    margin-bottom: 5rem;
+    padding: 2.5rem 3rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 2rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+#div-container .div-consulta::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#div-container .div-consulta .div-dados {
+    float: left;
+    width: max-content;
+    display: inline-block;
+    text-align: center;
+}
+
+#div-container .div-consulta .div-dados:not(:first-child) {
+    margin-left: 5rem;
+}
+
+#div-container .div-consulta .div-dados h2 {
+    font-size: 2rem;
+    color: #808080;
+}
+
+#div-container .div-consulta .div-dados p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#div-container .div-consulta img {
+    margin: 0rem 0 0 3rem;
+    width: 50px;
+    cursor: pointer;
+}
