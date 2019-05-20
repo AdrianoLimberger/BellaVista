@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.div-form {
+  position: absolute;
+  top: 15%;
+  margin-bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 2rem 0.1rem rgba(0, 0, 0, 0.2);
+  padding: 6rem;
+}
+
+.div-form h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  background-image: linear-gradient(to right, #28b485, #7ed56f);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+form .div-text-align-center {
+  position: relative;
+  margin-bottom: 3rem;
+  height: 6rem;
+  text-align: center;
+}
+
+form input {
+  font-size: 1.6rem;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  pointer-events: none;
+  color: #7ed56f;
+  transition: all 0.2s;
+}
+
+.form-input-text {
+  padding: 3rem 2rem;
+  width: 30rem;
+  height: 100%;
+  border: 1px solid #808080;
+  text-align: center;
+}
+
+.form-input-text:focus {
+  border-color: #7ed56f;
+  outline: none;
+}
+
+.form-input-text:focus + label,
+.form-input-text:valid + label {
+  top: 20%;
+  font-size: 1.5rem;
+}
+
+.div-plano-saude {
+  margin-top: 5rem;
+}
+
+.div-plano-saude label {
+  position: relative;
+  left: 5rem;
+  font-size: 2.5rem;
+  display: block;
+  cursor: pointer;
+  color: #808080;
+  transition: all 0.2s;
+}
+
+.div-plano-saude label:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.div-plano-saude label span {
+  position: absolute;
+  top: 0.3rem;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #808080;
+  border-radius: 100px;
+}
+
+.div-plano-saude input[type="radio"] {
+  opacity: 0;
+}
+
+.div-select {
+  margin-top: 5rem;
+  text-align: center;
+  display: none;
+}
+
+.div-select select {
+  width: 20rem;
+  padding: 1rem;
+  -webkit-appearance: button;
+  font-size: 1.5rem;
+  color: #28b485;
+}
+
+.div-select h2 {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #808080;
+}
+
+input[type="submit"] {
+  margin-top: 4rem;
+  padding: 1.5rem 2rem;
+  width: 20rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 100px;
+  background-color: #7ed56f;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #55c57a;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: #55c57a;
+  outline: none;
+}
+
+input[type="submit"]:active {
+  transform: translateY(2px);
+}
