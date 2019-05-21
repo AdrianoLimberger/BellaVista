@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.btn-cadastrar:link, .btn-cadastrar:visited {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 10rem);
+    padding: 1.5rem 2rem;
+    width: 20rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 100px;
+    background-color: #7ed56f;
+    color: #fff;
+}
+
+.btn-cadastrar:hover {
+    background-color: #55c57a;
+}
+
+.btn-cadastrar:active, .btn-cadastrar:focus {
+    background-color: #55c57a;
+    outline: none;
+}
+
+.btn-cadastrar:active {
+    transform: translateY(-2px);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .3);
+}
